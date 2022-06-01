@@ -1,0 +1,2 @@
+(window.sharedJsonP=window.sharedJsonP||[]).push([["asos-web-logging|2.2.103|3209c"],{b0326:function(n,r,o){"use strict";var e=["error","warn","info","http","verbose","debug","silly"];n.exports=function(){return e.reduce((function(n,r){return n[r]=function(){},n}),{})}}}]);
+//# sourceMappingURL=asos-web-logging~2.2.103~3209c.js.map

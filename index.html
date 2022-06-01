@@ -1,61 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid bg-black">
-          <a class="navbar-brand text-light" href="#"><img src="./image/ASOS logo.svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Women</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Men</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li> -->
-            </ul>
-            <form class="w-50 p-3" role="search">
-              <div class="d-inline-flex w-100 rounded-pill bg-white h-50"><input class="form-control border-0 rounded-pill text-secondary shadow-none" type="search" placeholder="Search for items and brands" aria-label="Search"><img src="./image/Search Icon.svg" alt="search navbar-toggler-icon" class="" style="width: 30px;"></div>
-            </form>
 
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><img src="./image/profile.svg" alt=""></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><img src="./image/favorite.svg" alt=""></a>
-              </li>
-              <li class="nav-item bg-light">
-                <a class="nav-link active" aria-current="page" href="#"><img src="./image/cart.svg" class="w-100 bg-white" alt=""></a>
-              </li>
-            </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg lh-7">
+    <div class="container-fluid bg-black">
+      <a class="navbar-brand text-light border-end  ms-5 pe-2" href="#"><img src="./image/ASOS logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-0 mb-lg-0">
+          <li class="nav-item bg-dark ms-3 me-3">
+            <a class="nav-link active fs-6 fw-bolder text-uppercase text-white border-end " aria-current="page"
+              href="#">Women</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link active fw-bolder text-uppercase text-white fs-6 border-end" href="#">Men</a>
+          </li>
+        </ul>
+        <form class="w-75 p-0 ps-3 d-block mx-auto" role="search">
+          <div class="d-inline-flex w-100 rounded-pill bg-white h-20"><input
+              class="form-control border-0 rounded-pill text-secondary shadow-none" type="search"
+              placeholder="Search for items and brands" aria-label="Search"><img src="./image/Search Icon.svg"
+              alt="search navbar-toggler-icon" class="" style="width: 30px"></div>
+        </form>
+
+        <ul class="navbar-nav mb-1 mb-lg-0">
+          <li class="nav-item w-25">
+            <a class="nav-link active text-white" aria-current="page" href="#"><img src="./image/profile.svg"
+                class=" ps-3 ms-2 img-width" alt="" /></a>
+          </li>
+          <li class="nav-item w-25">
+            <a class="nav-link active text-white" aria-current="page" href="#"><img src="./image/favorite.svg"
+                class="ps-3 img-width" alt=""></a>
+          </li>
+          <li class="nav-item w-25">
+            <a class="nav-link active text-white" aria-current="page" href="#"><img src="./image/cart.svg"
+                class="ps-3 img-width" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </div>
+
+  
+  <!-- ends -->
+
+  <div class="container section2 mt-4 mb-4">
+
+  </div>
+
+  <div class="container mb-4">
+    <div class="row gap-0">
+      <div class="col-3">
+        <div class="card border-0" style="width: 16rem;">
+          <img src="image/get-glam.avif" class="card-img-top img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-uppercase">Get Glam</h5>
+            <p class="card-text">Instant dress relief</p>
           </div>
         </div>
-      </nav>
+      </div>
 
-      <script src="./js/bootstrap.min.js"></script>
+      <div class="col-3">
+        <div class="card border-0" style="width: 16rem;">
+          <img src="image/beach-babe.avif" class="card-img-top img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-uppercase">beach babe</h5>
+            <p class="card-text">Swim things from ASOS DESIGN</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card border-0" style="width: 16rem;">
+          <img src="image/miss-self.avif" class="card-img-top img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-uppercase">Miss selfridge</h5>
+            <p class="card-text">It's what your wardrope wants</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card border-0" style="width: 16rem;">
+          <img src="image/vita.avif" class="card-img-top img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-uppercase">Vita Liberata</h5>
+            <p class="card-text">Your bronzed bod awaits</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid bg-aqua text-center pb-2 mb-3 pt-2">
+    <h1 class="fw-bolder">UP TO 30% OFF FLAWLESS 'FITS</h1>
+    <p>Limited time only. Selected styles marked down as shown.</p>
+  </div>
+
+  <div class="container-fluid overflow-hidden mt-5 mb-5">
+    <div class="row w-75 gx-0 mx-auto">
+      <div class="col-6">
+        <div class="border-0 card" style="width: 30rem; background-image: url(./image/banner2.avif); height: 40rem; background-size: contain; background-repeat: no-repeat;">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title text-uppercase">what's the occassion?</h5>
+          <p class="card-text">Invite-only dresses</p>
+          <a href="#" class="btn btn-outline-dark btn-lg fw-bolder fs-6">SHOP ASOS DESIGN</a>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="border-0 card" style="width: 30rem; background-image: url(./image/banner3.avif); height: 40rem; background-size: contain; background-repeat: no-repeat;">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title text-uppercase">asyou</h5>
+          <p class="card-text">Main-character moments</p>
+          <a href="#" class="btn btn-outline-dark btn-lg fw-bolder fs-6">SHOP THE BRAND</a>
+        </div>
+        </background-image:>
+      </div>
+    </div>
+  </div>
+
+<h2 class="text-center fw-bolder fs-4 mb-5">TRENDING BRANDS</h2>
+
+
+<div class="container mb-5">
+
+  <div class="row">
+    <div class="col"><img src="image/img17.jpg" class="img-fluid" alt=""></div>
+    <div class="col"><img src="image/img18.png" class="img-fluid" alt=""></div>
+    <div class="col"><img src="image/img19.jpg" class="img-fluid" alt=""></div>
+    <div class="col"><img src="image/img20.jpg" class="img-fluid" alt=""></div>
+    <div class="col"><img src="image/img21.png" class="img-fluid" alt=""></div>
+    <div class="col"><img src="image/img22.png" class="img-fluid" alt=""></div>
+  </div>
+
+</div>
+
+<div class="container social w-50 mb-5">
+
+<div class="row">
+
+  <div class="col"><img src="image/img23.svg" class="img-fluid" alt=""></div>
+  <div class="col"><img src="image/img24.svg" class="img-fluid" alt=""></div>
+  <div class="col"><img src="image/img25.svg" class="img-fluid" alt=""></div>
+  <div class="col"><div class="vr"></div></div>
+  <div class="col"><img src="image/img26.jfif" class="img-fluid" alt=""></div>
+  <div class="col"><img src="image/img27.jfif" class="img-fluid" alt=""></div>
+  <div class="col"><img src="image/img28.jfif" class="img-fluid" alt=""></div>
+  <div class="col"><img src="image/img29.jfif" class="img-fluid" alt=""></div>
+  <div class="col"><img src="image/img30.jfif" class="img-fluid" alt=""></div>
+
+</div>
+
+</div>
+
+<div class="container bg-ash pt-4 pb-5">
+  <div class="row">
+    <div class="col">
+      <ul class="navbar-nav">
+        <h6>HELP & INFORMATION</h6>
+        <li class="nav-ite">Help</li>
+        <li>Track order</li>
+        <li>Delivery & returns</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="navbar-nav">
+        <h6>ABOUT ASOS</h6>
+        <li>About us</li>
+        <li>Careers at ASOS</li>
+        <li>Corporate responsibility</li>
+        <li>Investors' site</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="navbar-nav">
+        <h6>MORE FROM ASOS</h6>
+        <li>Mobile and ASOS apps</li>
+        <li>ASOS Marketplace</li>
+        <li>GIft vouchers</li>
+        <li>Black Friday</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="navbar-nav">
+        <h6>SHOPPING FROM:</h6>
+        <li class="nga">You're in <span class="pe-1"><img src="image/img05.png" alt=""></span><div class="d-inline-flex"><div class="vr"></div></div><h6 class="d-inline-flex ps-1"> CHANGE</h6></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container footer bg-secondary pt-2 pb-2 pe-4 fw-bold">
+  <div class="row">
+    <div class="col">&copy; 2022 ASOS</div>
+    <div class="col text-end"> Privacy & Cookies <div class="vr"></div> Ts&Cs <div class="vr"></div> Accessibility</div>
+  </div>
+</div>
+
+  <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
